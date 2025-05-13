@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - PASSYNC</title>
+  <link rel="stylesheet" href="login/style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">PASSYNC</div>
+    <button class="botao-canto">Login</button>
+  </header>
+
+  <main class="login-container">
+    <div class="login-img">
+      <img src="img/login.png" alt="Pessoa com notebook" />
+    </div>
+    <div class="login">
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username</label>
+        <input type="email" id="username" placeholder="exemplo@passync.com" required />
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="********" required />
+
+        <div class="opçoes">
+          <label><input type="checkbox" /> Lembrar - me</label>
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+
+        <button type="submit" class="botao-principal">Entrar</button>
+
+        <p class="signup">Não tem conta? <a href="#">Inscrever-se</a></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer-ajuda">
+    <p>Fale conosco: ajuda@passync.com</p>
+  </footer>
+</body>
+</html>
