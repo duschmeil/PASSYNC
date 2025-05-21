@@ -145,4 +145,11 @@ h1 {
 .rodape .redes {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
+
+.rodape .redes img {
+  width: 20px;
+  height: 20px;
+}
+
