@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alertas</title>
-    <link rel="stylesheet" href="alertas.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PASSYNC - Alertas</title>
+  <link rel="stylesheet" href="alertas.css">
 </head>
 <body>
-    <a href="">
-        <header class="topo">
-        <div class="logo">PASSYNC</div>
-          </header>
-    </a>
+  <header>
+    <div class="logo">PASSYNC</div>
+  </header>
+
+  <nav class="menu">
+    <div class="hamburger">
+      <div></div><div></div><div></div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Alertas</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar alertas..." />
+      <button>🔍</button>
+    </div>
+
+    <section class="alerts-container">
+      <div class="alert"><input type="checkbox"><span>⚠️ Senha fraca detectada</span><small>Hoje</small></div>
+      <div class="alert"><input type="checkbox"><span>⚠️ ALERTA: Identificamos uma atividade suspeita</span><small>3 dias atrás</small></div>
+      <div class="alert checked"><input type="checkbox" checked><span>⚠️ Um dispositivo acessou sua conta. Se não foi você, altere ...</span><small>4 dias atrás</small></div>
+      <div class="alert checked"><input type="checkbox" checked><span>⚠️ Já faz 6 meses desde que você atualizou sua senha ...</span><small>Uma semana atrás</small></div>
+      <div class="alert checked"><input type="checkbox" checked><span>⚠️ Senha duplicada detectada</span><small>Uma semana atrás</small></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Fale conosco: <a href="mailto:ajuda@passync.com">ajuda@passync.com</a></span>x
+    <span class="footer-center">PASSYNC</span>
+    <span class="social-icons">✉️ 🔵 📱 📷</span>
+  </footer>
 </body>
 </html>
