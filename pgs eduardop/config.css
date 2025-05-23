@@ -7,13 +7,21 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-body {
-  background-color: #fff;
-  color: #000;
+html, body {
+  height: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
+
+body {
+  flex: 1;
+}
+
+main {
+  flex: 1;
+}
+
 
 .topo {
   background-color: #0a60ff;
@@ -21,5 +29,79 @@ body {
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 1.2rem;
-  margin-bottom: -100px;
+}
+
+.logo {
+  color: #fff;
+}
+
+.semsublinhado {
+  text-decoration: none;
+}
+
+.config-section {
+  padding: 40px 20px;
+}
+
+.config-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.config-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.config-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+
+.config-left img {
+  width: 300px;
+  margin-top: 10px;
+}
+
+.config-left label {
+  font-size: 22px;
+}
+
+.barrinhameio {
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.config-right {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.opcao {
+  background-color: rgb(247, 247, 247);
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.opcao.active {
+  background-color: #d0e6ff;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #0a60ff;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
 }

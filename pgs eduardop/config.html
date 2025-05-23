@@ -7,6 +7,60 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <header class="topo">
+            <a href="index.html" class="semsublinhado">
+                <div class="logo">PASSYNC</div>
+            </a>
+        </header>
+        <section class="config-section">
+            <h2>Configurações</h2>
+            <div class="config-grid">
+                <div class="config-left">
+                <div class="modulo" id="mod-geral">
+                    <label><input type="checkbox" checked /> Bloqueio Automático</label><br>
+                    <label><input type="checkbox" checked /> Autenticação em duas etapas</label><br>
+                    <label><input type="checkbox" checked /> Login Automático</label><br>
+                    <label><input type="checkbox" checked /> Notificações</label><br>
+                    <img src="imgs/image 9.png" alt="Engrenagens" />
+                </div>
+
+                <div class="modulo" id="mod-perfil" style="display: none;">
+                    <p>Informações do Perfil...</p>
+                </div>
+
+                <div class="modulo" id="mod-senha" style="display: none;">
+                    <p>Formulário para trocar a senha mestre...</p>
+                </div>
+
+                <div class="modulo" id="mod-permissoes" style="display: none;">
+                    <p>Permissões específicas...</p>
+                </div>
+
+                <div class="modulo" id="mod-ajuda" style="display: none;">
+                    <p>Central de Ajuda...</p>
+                </div>
+            </div>
+
+                <div class="barrinhameio"></div>
+                <div class="config-right">
+                    <div class="config-right">
+                    <div class="opcao active" data-target="geral"><p>Geral</p></div>
+                    <div class="opcao" data-target="perfil"><p>Perfil</p></div>
+                    <div class="opcao" data-target="senha"><p>Trocar Senha Mestre</p></div>
+                    <div class="opcao" data-target="permissoes"><p>Permissões</p></div>
+                    <div class="opcao" data-target="ajuda"><p>Ajuda</p></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        Fale conosco: ajuda@passync.com | PASSYNC
+    </footer>
+
+
+    <script src="config.js"></script>
 </body>
 </html>
