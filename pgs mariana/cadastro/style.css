@@ -98,7 +98,6 @@ body {
   cursor: pointer;
 }
 
-/* FOOTER */
 .footer-ajuda {
   height: 50px;
   background-color: #0a60ff;
@@ -111,7 +110,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
   .cadastro-container {
     flex-direction: column;
