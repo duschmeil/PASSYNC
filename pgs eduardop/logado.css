@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topo {
+  background-color: #0a60ff;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #0072ff;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+
+  .socials  {
+    margin: 0 5px;
+    font-size: 20px;
+    text-align: right;
+  }
+  
+  .footer .socials {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .footer .socials img {
+    width: 20px;
+    height: 20px;
+  }
+
+.painel {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.barraIcones {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.iconeCaixa {
+  background: #f1f5ff;
+  border-radius: 12px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 8px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  transition: 0.2s;
+  cursor: pointer;;
+}
+
+.textoSinc {
+    font-size: 17px;
+}
+
+.textoNotif {
+    font-size: 16px;
+}
+
+.textoConfig {
+    font-size: 14px;
+}
+
+.barraIcones a {
+    text-decoration: none;
+    color: black;
+}
+
+.iconeCaixa:hover {
+  background: #d8e8ff;
+}
+
+.iconeCaixa img {
+  width: 38px;
+  height: 38px;
+  margin: 0 auto;
+}
+
+.iconeCaixa.ativo {
+  background: #bcd9ff;
+  font-weight: bold;
+}
+
+.cartao {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.cartaoEsquerda {
+  flex: 2;
+}
+
+.cartaoEsquerda h3 {
+  margin-bottom: 10px;
+}
+
+.cartaoEsquerda ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+.cartaoDireita1 {
+  flex: 1;
+}
+
+.cartaoDireita1 img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 12px;
+}
+
+.cartaoDireita2 {
+  flex: 1;
+}
+
+.cartaoDireita2 img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 12px;
+}
+
+.cartaoDireita3 {
+  flex: 1;
+}
+
+.cartaoDireita3 img {
+  width: 80%;
+  max-width: 110px;
+  border-radius: 12px;
+  margin-left: 30px;
+}
+
+.pesquisar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+.pesquisar input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 250px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.pesquisar input:focus {
+  border-color: #4d90fe;
+  box-shadow: 0 0 0 2px rgba(77, 144, 254, 0.2);
+}
+
+.pesquisar button {
+  background-color: #4d90fe;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pesquisar button:hover {
+  background-color: #3a76d1;
+}
