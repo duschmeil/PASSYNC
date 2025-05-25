@@ -22,8 +22,29 @@
     align-items: center;
   }
   
+  .menu-icon {
+  font-size: 25px; 
+  cursor: pointer;
+  }
+
+  .menu-icon, .home-icon {
+    width: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .home-icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
   .logo {
-    font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
   }
   
   .container {
