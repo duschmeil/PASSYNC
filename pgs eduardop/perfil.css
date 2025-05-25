@@ -21,5 +21,125 @@ body {
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 1.2rem;
-  margin-bottom: -100px;
+}
+
+.tudo {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #0072ff;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+
+  .socials  {
+    margin: 0 5px;
+    font-size: 20px;
+    text-align: right;
+  }
+  
+  .footer .socials {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .footer .socials img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .perfil {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.perfil h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.fotoPerfil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnUpload {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 999px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.btnUpload:hover {
+  background: #f3f3f3;
+}
+
+.descricao {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.infoPerfil {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.linhaPerfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+}
+
+.linhaPerfil h3 {
+  margin: 0;
+}
+
+.linhaPerfil p {
+  margin: 4px 0 0 0;
+  color: #333;
+}
+
+.btnEditar {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px 20px;
+  border-radius: 999px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.btnEditar:hover {
+  background: #f3f3f3;
 }
