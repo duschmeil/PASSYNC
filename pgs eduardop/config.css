@@ -63,10 +63,17 @@ main {
   min-width: 250px;
 }
 
+.config-left p{
+  background-color: rgb(248, 248, 248);
+  font-size: 22px;
+  border-radius: 10px;
+  padding: 20px;
 
-.config-left img {
-  width: 300px;
-  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.config-left p:hover { 
+  background-color: #d8e8ff;
 }
 
 .config-left label {
@@ -92,12 +99,20 @@ main {
   font-size: 20px;
   padding: 20px;
   border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
 }
 
 .opcao.active {
   background-color: #d0e6ff;
   font-weight: bold;
 }
+
+.opcao:hover {
+  background-color: #d0e6ff;
+  transform: translateX(2px);
+}
+
 
 .footer {
   background-color: #0a60ff;
