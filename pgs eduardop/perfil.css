@@ -28,6 +28,11 @@ body {
   padding: 20px;
 }
 
+.textoheader {
+  text-decoration: none;
+  color: white;
+}
+
 .footer {
   background-color: #0072ff;
   color:white;
