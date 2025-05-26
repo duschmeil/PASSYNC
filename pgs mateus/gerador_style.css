@@ -48,7 +48,7 @@
   }
   
   .container {
-    max-width: 500px;
+    width: 700px;
     margin: 60px auto;
     text-align: center;
   }
@@ -89,12 +89,13 @@
   }
   
   .options-box {
-    background: white;
-    padding: 50px;
-    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
+    padding: 50px;
+    border-radius: 15px;
+    background: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -102,13 +103,17 @@
     list-style: none;
     text-align: left;
     font-size: 40px;
+    flex: 1;
+    min-width: 0;
+    word-break: break-word;
   }
 
   .checklist input[type="checkbox"] {
-    transform: scale(3.5); 
+    transform: scale(3); 
     margin-right: 10px;     
     accent-color: #0072ff; 
     cursor: pointer;
+    margin-bottom: 40px;
   }
   
   .check {
@@ -117,8 +122,9 @@
   }
   
   .lock-icon {
-    width: 80px;
-    height: auto;
+  width: 250px;
+  height: auto;
+  flex-shrink: 0;
   }
   
   .footer {
