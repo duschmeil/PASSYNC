@@ -9,34 +9,80 @@
 <body>
   <header>
     <div class="logo">PASSYNC</div>
+    <div class="home-icon">&#8962;</div>
   </header>
 
   <nav class="menu">
-    <div class="hamburger">
+    <div class="hamburger" tabindex="0" aria-label="Abrir menu" role="button">
       <div></div><div></div><div></div>
     </div>
   </nav>
 
   <main>
-    <h1>Alertas</h1>
+    <div class="alertas-header">
+      <h1>Alertas</h1>
+      <span class="alert-top-icon">&#9888;</span>
+    </div>
     <div class="search-bar">
       <input type="text" placeholder="Buscar alertas..." />
-      <button>🔍</button>
+      <button aria-label="Buscar">&#128269;</button>
     </div>
 
     <section class="alerts-container">
-      <div class="alert"><input type="checkbox"><span>⚠️ Senha fraca detectada</span><small>Hoje</small></div>
-      <div class="alert"><input type="checkbox"><span>⚠️ ALERTA: Identificamos uma atividade suspeita</span><small>3 dias atrás</small></div>
-      <div class="alert checked"><input type="checkbox" checked><span>⚠️ Um dispositivo acessou sua conta. Se não foi você, altere ...</span><small>4 dias atrás</small></div>
-      <div class="alert checked"><input type="checkbox" checked><span>⚠️ Já faz 6 meses desde que você atualizou sua senha ...</span><small>Uma semana atrás</small></div>
-      <div class="alert checked"><input type="checkbox" checked><span>⚠️ Senha duplicada detectada</span><small>Uma semana atrás</small></div>
+      <div class="alert alert-active">
+        <label class="custom-checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <span class="alert-icon">&#9888;</span>
+        <span class="alert-text">Senha fraca detectada</span>
+        <small>Hoje</small>
+      </div>
+      <div class="alert">
+        <label class="custom-checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <span class="alert-icon">&#9888;</span>
+        <span class="alert-text">ALERTA: Identificamos uma atividade suspeita</span>
+        <small>3 dias atrás</small>
+      </div>
+      <div class="alert checked">
+        <label class="custom-checkbox">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+        </label>
+        <span class="alert-icon">&#9888;</span>
+        <span class="alert-text">Um dispositivo acessou sua conta. Se não foi você, altere ...</span>
+        <small>4 dias atrás</small>
+      </div>
+      <div class="alert checked">
+        <label class="custom-checkbox">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+        </label>
+        <span class="alert-icon">&#9888;</span>
+        <span class="alert-text">Já faz 6 meses desde que você atualizou sua senha ...</span>
+        <small>Uma semana atrás</small>
+      </div>
+      <div class="alert checked">
+        <label class="custom-checkbox">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+        </label>
+        <span class="alert-icon">&#9888;</span>
+        <span class="alert-text">Senha duplicada detectada</span>
+        <small>Uma semana atrás</small>
+      </div>
     </section>
   </main>
 
   <footer>
-    <span>Fale conosco: <a href="mailto:ajuda@passync.com">ajuda@passync.com</a></span>x
+    <span>Fale conosco: <a href="mailto:ajuda@passync.com">ajuda@passync.com</a></span>
     <span class="footer-center">PASSYNC</span>
-    <span class="social-icons">✉️ 🔵 📱 📷</span>
+    <span class="social-icons">
+      &#9993; &nbsp; &#128241; &nbsp; &#128222; &nbsp; &#128247;
+    </span>
   </footer>
 </body>
 </html>

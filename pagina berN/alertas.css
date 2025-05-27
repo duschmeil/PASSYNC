@@ -10,31 +10,9 @@
 body {
   background-color: #fff;
   color: #000;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.topo {
-  background-color: #0a60ff;
-  color: white;
-  padding: 1rem 2rem;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: -100px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -48,104 +26,214 @@ header {
 
 .logo {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
 }
 
 .home-icon {
-  font-size: 20px;
+  font-size: 26px;
+  cursor: pointer;
 }
 
 .menu {
-  padding: 10px;
+  padding: 10px 20px 0 20px;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: black;
-  margin: 4px 0;
+  width: 35px;
+  height: 4px;
+  background-color: #222;
+  margin: 7px 0;
+  border-radius: 3px;
 }
 
 main {
   flex: 1;
   padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-h1 {
-  margin-bottom: 15px;
-  font-size: 50px;
+.alertas-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.alertas-header h1 {
+  margin-bottom: 0;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.alert-top-icon {
+  color: #e23a3a;
+  font-size: 48px;
+  margin-left: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .search-bar {
   display: flex;
-  margin-bottom: 20px;
+  margin: 35px 0 25px 0;
+  width: 100%;
+  max-width: 800px; /* Wider */
 }
 
 .search-bar input {
   flex: 1;
-  padding: 10px;
-  border-radius: 20px 0 0 20px;
+  padding: 24px 30px; /* Bigger */
+  border-radius: 40px 0 0 40px;
   border: 1px solid #ccc;
   outline: none;
+  font-size: 28px; /* Bigger */
+  box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.18);
+  height: 60px; /* Taller */
 }
 
 .search-bar button {
-  padding: 10px 15px;
+  padding: 0 40px; /* Wider */
   border: 1px solid #ccc;
   border-left: none;
-  border-radius: 0 20px 20px 0;
-  background-color: white;
+  border-radius: 0 40px 40px 0;
+  background-color: #fff;
   cursor: pointer;
+  font-size: 36px; /* Bigger */
+  box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.18);
+  transition: background 0.2s;
+  height: 60px; /* Taller */
+}
+
+.search-bar button:hover {
+  background: #e6e6e6;
 }
 
 .alerts-container {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 12px rgba(0,0,0,0.09);
+  margin-top: 10px;
 }
 
-.alert {                                                                                                                                                                                       
+.alert {
   background-color: #a7ccf1;
-  padding: 30px 50px;
-  margin-bottom: 12px;
-  border-radius: 15px;
+  padding: 22px 30px;
+  margin-bottom: 18px;
+  border-radius: 18px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   font-size: 20px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.13);
+  position: relative;
 }
 
-.alert input[type="checkbox"] {
-  margin-right: 10px;
-  transform: scale(1.3);
+.alert:last-child {
+  margin-bottom: 0;
+}
+
+.alert-active {
+  border: 3px solid #0a60ff;
 }
 
 .alert.checked {
   background-color: #8dbde7;
 }
 
-.alert span {
+.alert-icon {
+  font-size: 30px;
+  color: #e23a3a;
+  margin-right: 18px;
+  width: 36px;
+  text-align: center;
+}
+
+.alert-text {
   flex: 1;
-  margin-left: 10px;
   font-weight: bold;
 }
 
 .alert small {
   white-space: nowrap;
-  margin-left: 10px;
+  margin-left: 25px;
   color: #333;
+  font-size: 15px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.checkmark {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: 3px solid #a7ccf1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: background 0.2s, border 0.2s;
+  position: relative;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #2572d8;
+  border: 3px solid #2572d8;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark:after {
+  left: 9px;
+  top: 4px;
+  width: 10px;
+  height: 18px;
+  border: solid #fff;
+  border-width: 0 5px 5px 0;
+  transform: rotate(45deg);
+  content: "";
+  position: absolute;
 }
 
 footer {
   background-color: #0a60ff;
   color: white;
-  padding: 10px 20px;
+  padding: 14px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .footer-center {
@@ -154,9 +242,48 @@ footer {
 
 footer a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .social-icons {
-  font-size: 16px;
+  font-size: 21px;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 10px;
+  }
+  .alertas-header h1 {
+    font-size: 32px;
+  }
+  .search-bar input,
+  .search-bar button {
+    font-size: 16px;
+    padding: 10px 12px;
+    height: 38px;
+  }
+  .search-bar {
+    max-width: 100%;
+  }
+  .alert {
+    font-size: 16px;
+    padding: 14px 8px;
+  }
+  .alert-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    width: 24px;
+  }
+  .footer-center {
+    font-size: 15px;
+  }
+  footer {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+  .custom-checkbox,
+  .checkmark {
+    width: 22px;
+    height: 22px;
+  }
 }
