@@ -36,7 +36,7 @@ header {
   cursor: pointer;
 }
 
-.hero {
+.principal {
   display: flex;
   flex-wrap: wrap;
   padding: 64px 32px;
@@ -45,29 +45,35 @@ header {
   gap: 32px;
 }
 
-.hero .texto {
+.principal .texto {
   flex: 1 1 500px;
   max-width: 600px;
   text-align: left;
 }
 
-.hero .texto h1 {
+.principal .texto h1 {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
-.hero .texto p {
+.principal .texto p {
   font-size: 18px;
   margin-bottom: 16px;
   line-height: 1.6;
 }
 
-.hero .texto ul {
+.principal .texto ul {
   font-size: 18px;
   list-style: none;
   padding: 0;
   margin-bottom: 32px;
+}
+
+.principal .texto li {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
 }
 
 .lista {
@@ -77,13 +83,7 @@ header {
   margin-right: 8px;
 }
 
-.hero .texto li {
-  display: flex;
-  align-items: center;
-  margin: 8px 0;
-}
-
-.hero .botao-principal {
+.principal .botao-principal {
   background-color: #0a60ff;
   color: white;
   padding: 16px 27px;
@@ -93,15 +93,15 @@ header {
   cursor: pointer;
 }
 
-.hero .imagem {
+.principal .imagem {
   flex: 1 1 400px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hero .imagem img {
-  max-width: 50%;
+.principal .imagem img {
+  max-width: 45%;
   height: auto;
 }
 
@@ -146,7 +146,7 @@ header {
 .icone span {
   font-size: 20px;
   font-weight: 500;
-  color: #333;
+  color: #000000;
 }
 
 .icone i {

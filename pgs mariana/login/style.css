@@ -36,16 +36,6 @@ body {
   font-size: 21px;
 }
 
-.botao-canto {
-  background-color: #ffffff;
-  color: #0a60ff;
-  padding: 10px 24px;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .login-container {
   flex: 1;
   display: flex;
