@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+    <link rel="shortcut icon" href="../imagens/faviconpassync/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="favoritos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header class="topo">
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <div class="logo">PASSYNC</div>
+    <i id="home-icon" class="material-icons">home</i>
+  </header>
+
+  <menu id="itens" style="display: none;">
+    <div class="menu-item">
+      <span class="material-icons">person</span>
+      <button>Perfil</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">favorite</span>
+      <button>Favoritos</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">menu</span>
+      <button>Lista</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">mail</span>
+      <button>Notificações</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">add</span>
+      <button>Gerar</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">warning</span>
+      <button>Alertas</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">settings</span>
+      <button>Configurações</button>
+    </div>
+  </menu>
+
+  <main class="conteudo">
+    <h1>Favoritos</h1>
+
+    <div class="busca">
+      <input type="text" placeholder="Buscar..." />
+      <button class="icone-busca">🔍</button>
+    </div>
+
+    <div class="tabela">
+      <div class="linha">
+        <img src="../imagens/stars.png" alt="Favorito">
+        <img class="linkedin-logo" src="../imagens/linkedin-logo.png" alt="LinkedIn" />
+        <span>LinkedIn</span>
+        <span class="email">usuario@exemplo.com</span>
+        <span class="icone"><img src="../imagens/olho.png" alt="Olho"></span>
+      </div>
+      <div class="linha">
+        <img src="../imagens/stars.png" alt="Favorito">
+        <img src="../imagens/instagram-logo.png" alt="Instagram" />
+        <span>Instagram</span>
+        <span class="email">*******@*****.com</span>
+        <span class="icone"><img src="../imagens/olho-fechado.png" alt="Olho Fechado"></span>
+      </div>
+      <div class="linha">
+        <img src="../imagens/stars.png" alt="Favorito">
+        <img src="../imagens/x-logo.png" alt="X" />
+        <span>X</span>
+        <span class="email">usuario@exemplo.com</span>
+        <span class="icone"><img src="../imagens/olho.png" alt="Olho"></span>
+      </div>
+      <div class="linha">
+        <img src="../imagens/stars.png" alt="Favorito">
+        <img src="../imagens/spotify-logo.png" alt="Spotify" />
+        <span>Spotify</span>
+        <span class="email">*******@*****.com</span>
+        <span class="icone"><img src="../imagens/olho-fechado.png" alt="Olho Fechado"></span>
+      </div>
+      <div class="linha">
+        <img src="../imagens/stars.png" alt="Favorito">
+        <img src="../imagens/netflix-logo.png" alt="Netflix" />
+        <span>Netflix</span>
+        <span class="email">*******@*****.com</span>
+        <span class="icone"><img src="../imagens/olho-fechado.png" alt="Olho Fechado"></span>
+      </div>
+      <div class="linha">
+        <img src="../imagens/stars.png" alt="Favorito">
+        <img src="../imagens/git-logo.png" alt="GitHub" />
+        <span>GitHub</span>
+        <span class="email">usuario@exemplo.com</span>
+        <span class="icone"><img src="../imagens/olho.png" alt="Olho"></span>
+      </div>
+      <div class="linha">
+        <img src="../imagens/stars.png" alt="Favorito">
+        <img src="../imagens/steam-logo.png" alt="Steam" />
+        <span>Steam</span>
+        <span class="email">usuario@exemplo.com</span>
+        <span class="icone"><img src="../imagens/olho.png" alt="Olho"></span>
+      </div>
+      <div class="vermais">Ver Mais</div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <span>Fale Conosco: ajuda@passync.com</span>
+    <span class="redes">
+      <img src="../imagens/whatsapp-logo-rodape.png" alt="WhatsApp">
+      <img src="../imagens/instagram-logo-rodape.png" alt="Instagram">
+      <img src="../imagens/email-logo-rodape.png" alt="Email">
+      <img src="../imagens/facebook-logo-rodape.png" alt="Facebook">
+    </span>
+  </footer>
+  
+  <script>
+    function clickMenu() {
+      const menu = document.getElementById('itens');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -15,13 +15,12 @@ body {
   height: 100vh;
 }
 
-.topo {
+header {
   background-color: #0a60ff;
   color: white;
-  padding: 1rem 2rem;
+  padding: 16px 32px;
   font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: -100px;
+  font-size: 19px;
 }
 
 .nome {
@@ -30,80 +29,85 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 24px;
   padding: 10px;
   text-align: center;
 }
 
 h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  font-size: 29px;
+  margin-bottom: 8px;
 }
 
-.imagem-box {
+.imagem {
   background-color: #fff;
-  padding: 1rem;
+  padding: 16px;
   border-radius: 16px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px black;
   max-width: 500px;
   width: 100%;
 }
 
-.imagem-box img {
+.imagem img {
   width: 100%;
   height: auto;
 }
 
-.codigo {
+.numeros {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 
-.codigo input {
-  width: 3rem;
-  height: 3rem;
+.numeros input {
+  width: 48px;
+  height: 48px;
   text-align: center;
-  font-size: 1.5rem;
-  border: 2px solid #000;
+  font-size: 24px;
+  border: 2px solid black;
   border-radius: 6px;
 }
 
 .botoes {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 16px;
   justify-content: center;
 }
 
 .botoes button {
   background-color: #0a60ff;
   color: white;
-  padding: 0.75rem 1.2rem;
+  padding: 12px 19px;
   border: none;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 16px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   cursor: pointer;
 }
 
 .avancar {
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 .botao-seta {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid black;
-  background-color: white;
-  font-size: 1.5rem;
+  border: 2px solid black; 
+  background-color: white; 
+  color: black; 
+  font-size: 24px;
   cursor: pointer;
-}
 
-.codigo-box {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+}
+
+.codigo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 

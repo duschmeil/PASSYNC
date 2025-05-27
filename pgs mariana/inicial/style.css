@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: white;
+  color: #222;
+}
+
+header {
+  background: #0a60ff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.botao-topo {
+  background-color: #007AFF;
+  color: white;
+  padding: 16px 27px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 64px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.principal .texto {
+  flex: 1 1 500px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.principal .texto h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.principal .texto p {
+  font-size: 18px;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.principal .texto ul {
+  font-size: 18px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.principal .texto li {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.lista {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.principal .botao-principal {
+  background-color: #0a60ff;
+  color: white;
+  padding: 16px 27px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.principal .imagem {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal .imagem img {
+  max-width: 45%;
+  height: auto;
+}
+
+.descricao {
+  text-align: center;
+  margin: 32px 16px;
+  font-size: 24px;
+  color: #0a60ff;
+  font-weight: bold;
+}
+
+.icones {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px 48px;
+  text-align: center;
+}
+
+.icone {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.473);
+  width: 140px;
+  height: 160px;
+}
+
+.icone img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.icone span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.icone i {
+  font-size: 32px;
+  color: #0a60ff;
+  margin-bottom: 8px;
+}
+
+.icone span {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #333;
+}
+
+footer {
+  background-color: #0a60ff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  font-size: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-ajuda a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer .redes {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+footer .redes img {
+  width: 20px;
+  height: 20px;
+}
