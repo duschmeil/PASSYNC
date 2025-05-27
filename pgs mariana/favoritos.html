@@ -6,13 +6,45 @@
     <title>Favoritos</title>
     <link rel="shortcut icon" href="../imagens/faviconpassync/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="favoritos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
   <header class="topo">
-    <div class="menu-icon">☰</div>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
     <div class="logo">PASSYNC</div>
-    <div class="home-icon"><img src="../imagens/icone-de-casa.png" alt="Home"></div>
+    <i id="home-icon" class="material-icons">home</i>
   </header>
+
+  <menu id="itens" style="display: none;">
+    <div class="menu-item">
+      <span class="material-icons">person</span>
+      <button>Perfil</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">favorite</span>
+      <button>Favoritos</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">menu</span>
+      <button>Lista</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">mail</span>
+      <button>Notificações</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">add</span>
+      <button>Gerar</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">warning</span>
+      <button>Alertas</button>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">settings</span>
+      <button>Configurações</button>
+    </div>
+  </menu>
 
   <main class="conteudo">
     <h1>Favoritos</h1>
@@ -76,15 +108,24 @@
     </div>
   </main>
 
-<footer class="rodape">
-  <span>Fale Conosco: ajuda@passync.com</span>
-  <span class="redes">
-    <img src="../imagens/whatsapp-logo-rodape.png" alt="WhatsApp">
-    <img src="../imagens/instagram-logo-rodape.png" alt="Instagram">
-    <img src="../imagens/email-logo-rodape.png" alt="Email">
-    <img src="../imagens/facebook-logo-rodape.png" alt="Facebook">
-  </span>
-</footer>
-
+  <footer class="rodape">
+    <span>Fale Conosco: ajuda@passync.com</span>
+    <span class="redes">
+      <img src="../imagens/whatsapp-logo-rodape.png" alt="WhatsApp">
+      <img src="../imagens/instagram-logo-rodape.png" alt="Instagram">
+      <img src="../imagens/email-logo-rodape.png" alt="Email">
+      <img src="../imagens/facebook-logo-rodape.png" alt="Facebook">
+    </span>
+  </footer>
+  <script>
+    function clickMenu() {
+      const menu = document.getElementById('itens');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+  </script>
 </body>
 </html>
