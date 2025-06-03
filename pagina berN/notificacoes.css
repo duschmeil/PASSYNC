@@ -31,12 +31,14 @@ header {
 }
 
 .home-icon {
-  font-size: 26px;
+  font-size: 35px;
   cursor: pointer;
+  margin-top: -10px;
 }
 
 .menu {
   padding: 10px 20px 0 20px;
+  position: relative;
 }
 
 .hamburger {
@@ -78,7 +80,7 @@ main {
   color: #222;
   font-size: 48px;
   margin-left: 24px;
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
 }
@@ -87,35 +89,37 @@ main {
   display: flex;
   margin: 35px 0 25px 0;
   width: 100%;
-  max-width: 800px; /* Wider */
+  max-width: 800px;
+  color:#0a60ff
 }
 
 .search-bar input {
   flex: 1;
-  padding: 24px 30px; /* Bigger */
+  padding: 24px 30px;
   border-radius: 40px 0 0 40px;
-  border: 1px solid #ccc;
+  border: 1px solid #6eacd3;
   outline: none;
-  font-size: 28px; /* Bigger */
-  box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.18);
-  height: 60px; /* Taller */
+  font-size: 28px;
+  color: #0a60ff;
+  box-shadow: 2px 2px 6px 0 rgba(26, 121, 136, 0.18);
+  height: 60px;
 }
 
 .search-bar button {
-  padding: 0 40px; /* Wider */
-  border: 1px solid #ccc;
+  padding: 0 40px; 
+  border: 1px solid #257376;
   border-left: none;
   border-radius: 0 40px 40px 0;
-  background-color: #fff;
+  background-color: #c1f4fa;
   cursor: pointer;
-  font-size: 36px; /* Bigger */
+  font-size: 36px;
   box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.18);
   transition: background 0.2s;
-  height: 60px; /* Taller */
+  height: 60px;
 }
 
 .search-bar button:hover {
-  background: #e6e6e6;
+  background: #8cd1e4;
 }
 
 .notifications-container {
@@ -214,12 +218,12 @@ main {
   font-size: 30px;
   color: #2572d8;
   margin-right: 18px;
-  width: 36px;
+  width: 30px;
   text-align: center;
 }
 
 .notification-icon.warning {
-  color: #e23a3a;
+  color: #e01414;
 }
 
 .notification-text {
@@ -257,7 +261,7 @@ main {
 footer {
   background-color: #0a60ff;
   color: white;
-  padding: 14px 30px;
+  padding:10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
