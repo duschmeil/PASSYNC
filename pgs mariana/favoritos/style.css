@@ -160,6 +160,11 @@ h1 {
   cursor: pointer;
 }
 
+.oculto {
+  display: none;
+}
+
+
 .vermais {
   text-align: center;
   padding: 13px;

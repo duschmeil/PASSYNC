@@ -104,12 +104,40 @@
         <span class="email">usuario@exemplo.com</span>
         <span class="icone"><img src="../imagens/olho.png" alt="Olho"></span>
       </div>
+      <div class="linha oculto">
+        <img src="../imagens/stars.png" alt="Favorito">
+        <img src="../imagens/steam-logo.png" alt="Steam" />
+        <span>Steam</span>
+        <span class="email">usuario@exemplo.com</span>
+        <span class="icone"><img src="../imagens/olho.png" alt="Olho"></span>
+      </div>
+      <div class="linha oculto">
+        <img src="../imagens/stars.png" alt="Favorito">
+        <img src="../imagens/steam-logo.png" alt="Steam" />
+        <span>Steam</span>
+        <span class="email">usuario@exemplo.com</span>
+        <span class="icone"><img src="../imagens/olho.png" alt="Olho"></span>
+      </div>
+      <div class="linha oculto">
+        <img src="../imagens/stars.png" alt="Favorito">
+        <img src="../imagens/steam-logo.png" alt="Steam" />
+        <span>Steam</span>
+        <span class="email">usuario@exemplo.com</span>
+        <span class="icone"><img src="../imagens/olho.png" alt="Olho"></span>
+      </div>
+      <div class="linha oculto">
+        <img src="../imagens/stars.png" alt="Favorito">
+        <img src="../imagens/steam-logo.png" alt="Steam" />
+        <span>Steam</span>
+        <span class="email">usuario@exemplo.com</span>
+        <span class="icone"><img src="../imagens/olho.png" alt="Olho"></span>
+      </div>
       <div class="vermais">Ver Mais</div>
     </div>
   </main>
 
   <footer class="rodape">
-    <span>Fale Conosco: ajuda@passync.com</span>
+    <span>Fale Conosco: ajudapassync@gmail.com</span>
     <span class="redes">
       <img src="../imagens/whatsapp-logo-rodape.png" alt="WhatsApp">
       <img src="../imagens/instagram-logo-rodape.png" alt="Instagram">
@@ -128,5 +156,30 @@
       }
     }
   </script>
+
+<script>
+  const verMaisBtn = document.querySelector('.vermais');
+  const linhasOcultas = document.querySelectorAll('.linha.oculto');
+  let index = 0;
+
+  verMaisBtn.addEventListener('click', () => {
+    // Quantas linhas revelar por clique
+    const quantidade = 2;
+    let reveladas = 0;
+
+    while (index < linhasOcultas.length && reveladas < quantidade) {
+      linhasOcultas[index].style.display = 'flex';
+      index++;
+      reveladas++;
+    }
+
+    // Se não houver mais linhas ocultas, esconde o botão
+    if (index >= linhasOcultas.length) {
+      verMaisBtn.style.display = 'none';
+    }
+  });
+</script>
+
+
 </body>
 </html>
