@@ -245,8 +245,15 @@ footer a {
   text-decoration: underline;
 }
 
-.social-icons {
-  font-size: 21px;
+footer .social-icons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+footer .social-icons img {
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 700px) {
