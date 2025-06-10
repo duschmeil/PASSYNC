@@ -30,6 +30,15 @@ body {
   height: 24px;
 }
 
+#home-icon {
+  color: white;
+  cursor: pointer;
+}
+
+#burguer {
+  cursor: pointer;
+}
+
 menu {
   position: absolute;
   top: 55px;
@@ -62,11 +71,11 @@ menu {
   border-radius: 20px;
   box-shadow: 1px 2px 3px rgba(0,0,0,0.15);
   font-size: 14px;
-  cursor: pointer;
   font-weight: 500;
   transition: 0.3s;
   width: 140px; 
   text-align: left; 
+  cursor: pointer;
 }
 
 .menu-item button:hover {
@@ -196,6 +205,11 @@ h1 {
   font-size: 14px;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.footer-ajuda a {
+  color: white;
+  text-decoration: underline;
 }
 
 .rodape .redes {

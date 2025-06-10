@@ -19,7 +19,7 @@
     </div>
     <div class="login">
       <h2>Login</h2>
-      <form>
+      <form action="autent.html" method="get">
         <label for="mail">Email</label>
         <input type="email" id="mail" placeholder="exemplo@passync.com" required />
 
@@ -27,15 +27,15 @@
         <input type="password" id="password" placeholder="********" required />
 
         <div class="opçoes">
-          <label><input type="checkbox" /> Lembrar-me</label>
+          <label><input type="checkbox"/> Lembrar-me</label>
           <a href="#">Esqueceu a senha?</a>
         </div>
 
-        <a href="autent.html"><button class="botao-principal">Entrar</button></a>
-
-        <p class="signup">Não tem conta? <a href="cadastro.html">Inscrever-se</a></p>
+        <button type="submit" class="botao-principal">Entrar</button>
+        
+      <p class="signup">Não tem conta? <a href="cadastro.html">Inscrever-se</a></p>       
       </form>
-    </div>
+    </div> 
   </main>
 
   <footer class="footer-ajuda">

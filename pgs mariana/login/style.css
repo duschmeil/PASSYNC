@@ -93,6 +93,8 @@ body {
 .opçoes a {
   color: #0a60ff;
   text-decoration: none;
+  margin-left: auto;
+  white-space: nowrap;
 }
 
 .opçoes label {
@@ -100,7 +102,6 @@ body {
   align-items: center;
   gap: 6px;
   font-size: 14px;
-  line-height: 1;
   white-space: nowrap;
 }
 
@@ -117,13 +118,14 @@ body {
 
 .signup {
   text-align: center;
-  margin-top: 16px;
+  margin-top: 20px;
   font-size: 14px;
 }
 
 .signup a {
   color: #0a60ff;
   text-decoration: none;
+  text-align: center;
 }
 
 .footer-ajuda {
