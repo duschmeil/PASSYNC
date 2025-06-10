@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Senhas - PASSYNC</title>
+  <link rel="stylesheet" href="lista.css">
+  <link rel="shortcut icon" href="../imagens/faviconpassync/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+  <header class="topo">
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <div class="logo">PASSYNC</div>
+    <a href="../pgs eduardop/logado.html"><i id="home-icon" class="material-icons">home</i></a>
+  </header>
+
+  <menu id="itens" style="display: none;">
+    <div class="menu-item">
+      <span class="material-icons">person</span>
+      <a href="../pgs eduardop/perfil.html"><button>Perfil</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">favorite</span>
+      <a href="../pgs mariana/favoritos.html"><button>Favoritos</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">menu</span>
+      <a href="../pgs mateus/listadesenhas.html"><button>Lista</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">mail</span>
+      <a href="../pagina berN/notificacoes.html"><button>Notificações</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">add</span>
+      <a href="../pgs mateus/geradordesenhas.html"><button>Gerar</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">warning</span>
+      <a href="../pagina berN/alertas.html"><button>Alertas</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">settings</span>
+      <a href="../pgs eduardop/config.html"><button>Configurações</button></a>
+    </div>
+  </menu>
+
+  <main class="container">
+    <h1>Lista de Senhas</h1>
+    <div class="content">
+      <div class="categorias">
+        <button class="categoria">Redes Sociais</button>
+        <button class="categoria">Streaming</button>
+        <button class="categoria">Jogos</button>
+        <button class="categoria">Sites</button>
+      </div>
+
+      <div class="lista-senhas">
+        <div class="senha-item">
+          <img src="..\imagens\linkedin-logo.png" alt="LinkedIn">
+          <span>LinkedIn</span>
+          <span class="senha">************</span>
+          <img src="..\imagens\compartilhar.png" alt="Compartilhar" class="icon">
+          <img src="..\imagens\olho-fechado.png" alt="Ver senha" class="icon">
+        </div>
+        <div class="senha-item">
+          <img src="..\imagens\instagram-logo.png" alt="Instagram">
+          <span>Instagram</span>
+          <span class="senha">************</span>
+          <img src="..\imagens\compartilhar.png" alt="Compartilhar" class="icon">
+          <img src="..\imagens\olho-fechado.png" alt="Ver senha" class="icon">
+        </div>
+        <div class="senha-item">
+          <img src="..\imagens\facebook-logo.png" alt="Facebook">
+          <span>Facebook</span>
+          <span class="senha">************</span>
+          <img src="..\imagens\compartilhar.png" alt="Compartilhar" class="icon">
+          <img src="..\imagens\olho-fechado.png" alt="Ver senha" class="icon">
+        </div>
+        <div class="senha-item">
+          <img src="..\imagens\git-logo.png" alt="GitHub">
+          <span>GitHub</span>
+          <span class="senha">************</span>
+          <img src="..\imagens\compartilhar.png" alt="Compartilhar" class="icon">
+          <img src="..\imagens\olho-fechado.png" alt="Ver senha" class="icon">
+        </div>
+        <div class="senha-item">
+          <img src="..\imagens\x-logo.png" alt="X">
+          <span>X</span>
+          <span class="senha">************</span>
+          <img src="..\imagens\compartilhar.png" alt="Compartilhar" class="icon">
+          <img src="..\imagens\olho-fechado.png" alt="Ver senha" class="icon">
+        </div>
+        <div class="mais">
+          <img src="..\imagens\seta-baixo.png" alt="Ver mais">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span>Fale Conosco: ajudapassync@gmail.com </span>
+    <div class="socials">
+        <img src="../imagens/whatsapp-logo-rodape.png" alt="WhatsApp">
+        <img src="../imagens/instagram-logo-rodape.png" alt="Instagram">
+        <img src="../imagens/email-logo-rodape.png" alt="Email">
+        <img src="../imagens/facebook-logo-rodape.png" alt="Facebook">
+    </div>
+  </footer>
+
+  <script src="lista.js"></script>
+
+</body>
+</html>

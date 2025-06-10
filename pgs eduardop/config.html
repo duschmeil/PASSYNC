@@ -4,47 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="config.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="../imagens/faviconpassync/favicon.ico" type="image/x-icon">
+    <title>Configurações</title>
 </head>
 <body>
     <main>
+
         <header class="topo">
-            <a href="logado.html" class="semsublinhado">
-                <div class="logo">PASSYNC</div>
-            </a>
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            <div class="logo">PASSYNC</div>
+            <a href="../pgs eduardop/logado.html"><i id="home-icon" class="material-icons">home</i></a>
         </header>
+            
+        <menu id="itens" style="display: none;">
+            <div class="menu-item">
+            <span class="material-icons">person</span>
+            <a href="../pgs eduardop/perfil.html"><button>Perfil</button></a>
+            </div>
+            <div class="menu-item">
+            <span class="material-icons">favorite</span>
+            <a href="../pgs mariana/favoritos.html"><button>Favoritos</button></a>
+            </div>
+            <div class="menu-item">
+            <span class="material-icons">menu</span>
+            <a href="../pgs mateus/listadesenhas.html"><button>Lista</button></a>
+            </div>
+            <div class="menu-item">
+            <span class="material-icons">mail</span>
+            <a href="../pagina berN/notificacoes.html"><button>Notificações</button></a>
+            </div>
+            <div class="menu-item">
+            <span class="material-icons">add</span>
+            <a href="../pgs mateus/geradordesenhas.html"><button>Gerar</button></a>
+            </div>
+            <div class="menu-item">
+            <span class="material-icons">warning</span>
+            <a href="../pagina berN/alertas.html"><button>Alertas</button></a>
+            </div>
+            <div class="menu-item">
+            <span class="material-icons">settings</span>
+            <a href="../pgs eduardop/config.html"><button>Configurações</button></a>
+            </div>
+        </menu>
         <section class="config-section">
             <h2>Configurações</h2>
             <div class="config-grid">
                 <div class="config-left">
-                <div class="modulo" id="mod-geral">
-                    <p><input type="checkbox" checked /> Bloqueio Automático</p><br>
-                    <p><input type="checkbox" checked /> Autenticação em duas etapas</p><br>
-                    <p><input type="checkbox" checked /> Login Automático</p><br>
-                    <p><input type="checkbox" checked /> Notificações</p><br>
-                </div>
 
-                <div class="modulo" id="mod-perfil" style="display: none;">
-                    <p>Informações do Perfil...</p>
-                </div>
+                    <div class="modulo" id="mod-geral">
+                        <p><input type="checkbox" checked /> Bloqueio Automático</p><br>
+                        <p><input type="checkbox" checked /> Autenticação em duas etapas</p><br>
+                        <p><input type="checkbox" checked /> Login Automático</p><br>
+                        <p><input type="checkbox" checked /> Notificações</p><br>
+                    </div>
 
-                <div class="modulo" id="mod-senha" style="display: none;">
-                    <p>Formulário para trocar a senha mestre...</p>
-                </div>
+                    <a href="perfil.html">
+                        <div class="modulo" id="mod-perfil" style="display: none;">
+                        </div>
+                    </a>
 
-                <div class="modulo" id="mod-permissoes" style="display: none;">
-                    <p>Permissões específicas...</p>
-                </div>
+                    <div class="modulo" id="mod-senha" style="display: none;">
+                        <form onsubmit="event.preventDefault(); alert('Senha alterada com sucesso!')">
+                        <p><label>Senha Atual:<br><input type="password" required></label></p>
+                        <p><label>Nova Senha:<br><input type="password" required></label></p>
+                        <p><label>Confirmar Nova Senha:<br><input type="password" required></label></p>
+                        <p><button type="submit">Salvar</button></p>
+                        </form>
+                    </div>
 
-                <div class="modulo" id="mod-ajuda" style="display: none;">
-                    <p>Central de Ajuda...</p>
+                    <div class="modulo" id="mod-permissoes" style="display: none;">
+                        <p><input type="checkbox" checked /> Acesso a extensões</p><br>
+                        <p><input type="checkbox" /> Permitir acesso offline</p><br>
+                        <p><input type="checkbox" /> Permitir exportar dados</p><br>
+                    </div>
+
+                    <div class="modulo" id="mod-ajuda" style="display: none;">
+                        <p>Se você estiver com dúvidas, envie um e-mail para <strong>ajuda@passync.com</strong></p>
+                    </div>
                 </div>
-            </div>
 
                 <div class="barrinhameio"></div>
                 <div class="config-right">
                     <div class="opcao active" data-target="geral">Geral</div>
-                    <div class="opcao" data-target="perfil">Perfil</div>
+                    <a href="perfil.html" class="semsublinhado">
+                        <div class="opcao" data-target="perfil">Perfil</div>
+                    </a>
                     <div class="opcao" data-target="senha">Trocar Senha Mestre</div>
                     <div class="opcao" data-target="permissoes">Permissões</div>
                     <div class="opcao" data-target="ajuda">Ajuda</div>
@@ -53,9 +98,16 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
-        Fale conosco: ajuda@passync.com | PASSYNC
-    </footer>
+    <span>Fale Conosco: ajudapassync@gmail.com </span>
+    <div class="socials">
+        <img src="../imagens/whatsapp-logo-rodape.png" alt="WhatsApp">
+        <img src="../imagens/instagram-logo-rodape.png" alt="Instagram">
+        <img src="../imagens/email-logo-rodape.png" alt="Email">
+        <img src="../imagens/facebook-logo-rodape.png" alt="Facebook">
+    </div>
+  </footer>
 
 
     <script src="config.js"></script>

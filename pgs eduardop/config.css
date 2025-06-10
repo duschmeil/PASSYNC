@@ -22,13 +22,72 @@ main {
   flex: 1;
 }
 
-
 .topo {
   background-color: #0a60ff;
   color: white;
-  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+.home-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+#home-icon {
+  color: white;
+  cursor: pointer;
+}
+
+#burguer {
+  cursor: pointer;
+}
+
+menu {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0 0 12px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.menu-item span.material-icons {
+  font-size: 24px;
+  color: #000000;
+}
+
+.menu-item button {
+  border: none;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.15);
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+  width: 140px; 
+  text-align: left; 
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  background-color: #f0f0f0;
 }
 
 .logo {
@@ -37,6 +96,7 @@ main {
 
 .semsublinhado {
   text-decoration: none;
+  color: fff;
 }
 
 .config-section {
@@ -113,10 +173,30 @@ main {
   transform: translateX(2px);
 }
 
-
 .footer {
-  background-color: #0a60ff;
-  color: white;
-  text-align: center;
-  padding: 10px 20px;
-}
+  background-color: #0072ff;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+
+  .socials  {
+    margin: 0 5px;
+    font-size: 20px;
+    text-align: right;
+  }
+  
+  .footer .socials {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .footer .socials img {
+    width: 20px;
+    height: 20px;
+  }
