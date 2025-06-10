@@ -4,16 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="perfil.css">
+    <link rel="shortcut icon" href="../imagens/faviconpassync/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Perfil</title>
 </head>
 <body>
     
   <header class="topo">
-    <a href="logado.html" class="textoheader">
-        <div class="logo">PASSYNC</div>
-    </a>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <div class="logo">PASSYNC</div>
+    <a href="../pgs eduardop/logado.html"><i id="home-icon" class="material-icons">home</i></a>
   </header>
     
+  <menu id="itens" style="display: none;">
+    <div class="menu-item">
+      <span class="material-icons">person</span>
+      <a href="../pgs eduardop/perfil.html"><button>Perfil</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">favorite</span>
+      <a href="favoritos.html"><button>Favoritos</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">menu</span>
+      <a href="../pgs mateus/listadesenhas.html"><button>Lista</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">mail</span>
+      <a href="../pagina berN/notificacoes.html"><button>Notificações</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">add</span>
+      <a href="../pgs mateus/geradordesenhas.html"><button>Gerar</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">warning</span>
+      <a href="../pagina berN/alertas.html"><button>Alertas</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">settings</span>
+      <a href="../pgs eduardop/config.html"><button>Configurações</button></a>
+    </div>
+  </menu>
+
     <main class="tudo">
         <section class="perfil">
             <h1>Seu Perfil</h1>
@@ -52,7 +85,7 @@
 
 
   <footer class="footer">
-    <span>Fale Conosco: ajuda@passync.com </span>
+    <span>Fale Conosco: ajudapassync@gmail.com </span>
     <div class="socials">
         <img src="../imagens/whatsapp-logo-rodape.png" alt="WhatsApp">
         <img src="../imagens/instagram-logo-rodape.png" alt="Instagram">
