@@ -5,23 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PASSYNC - Notificações</title>
   <link rel="stylesheet" href="notificacoes.css">
+  <link rel="shortcut icon" href="../imagens/faviconpassync/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
   <header>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
     <div class="logo">PASSYNC</div>
-    <div class="home-icon">&#8962;</div>
+    <a href="../pgs eduardop/logado.html"><i id="home-icon" class="material-icons">home</i></a>
   </header>
 
-  <nav class="menu">
-    <div class="hamburger" tabindex="0" aria-label="Abrir menu" role="button">
-      <div></div><div></div><div></div>
+  <menu id="itens" style="display: none;">
+    <div class="menu-item">
+      <span class="material-icons">person</span>
+      <a href="../pgs eduardop/perfil.html"><button>Perfil</button></a>
     </div>
-  </nav>
+    <div class="menu-item">
+      <span class="material-icons">favorite</span>
+      <a href="../pgs mariana/favoritos.html"><button>Favoritos</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">menu</span>
+      <a href="../pgs mateus/listadesenhas.html"><button>Lista</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">mail</span>
+      <a href="notificacoes.html"><button>Notificações</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">add</span>
+      <a href="../pgs mateus/geradordesenhas.html"><button>Gerar</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">warning</span>
+      <a href="alertas.html"><button>Alertas</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">settings</span>
+      <a href="../pgs eduardop/config.html"><button>Configurações</button></a>
+    </div>
+  </menu>
 
   <main>
     <div class="notificacoes-header">
       <h1>Notificações</h1>
-      <span class="bell-icon">&#128276;</span>
+      <i id="notification" class="material-icons nova-cor">notifications</i>
     </div>
     <div class="search-bar">
       <input type="text" placeholder="Buscar notificações..." />
@@ -34,11 +62,11 @@
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <span class="flag-icon">&#128278;</span>
-        <span class="notification-icon">&#128187;</span>
+        <i id="flag" class="material-icons">bookmark</i>
+        <i id="computer" class="material-icons">computer</i>
         <span class="notification-text">Novo dispositivo conectado a sua conta</span>
         <small>Hoje</small>
-        <button class="close-btn" title="Remover">&#10060;</button>
+        <button class="close-btn" title="Remover"><i id="close" class="material-icons">close</i></button>
       </div>
 
       <div class="notification">
@@ -46,11 +74,11 @@
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <span class="flag-icon">&#128278;</span>
-        <span class="notification-icon warning">&#9888;</span>
+        <i id="flag" class="material-icons">bookmark</i>
+        <i id="alerta" class="material-icons">warning</i>
         <span class="notification-text">ALERTA: Identificamos uma atividade suspeita</span>
         <small>Ontem</small>
-        <button class="close-btn" title="Remover">&#10060;</button>
+        <button class="close-btn" title="Remover"><i id="close" class="material-icons">close</i></button>
       </div>
 
       <div class="notification">
@@ -58,11 +86,11 @@
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <span class="flag-icon">&#128278;</span>
-        <span class="notification-icon">&#128187;</span>
+        <i id="flag" class="material-icons">bookmark</i>
+        <i id="computer" class="material-icons">computer</i>
         <span class="notification-text">Sincronização concluída com sucesso</span>
         <small>4 dias atrás</small>
-        <button class="close-btn" title="Remover">&#10060;</button>
+        <button class="close-btn" title="Remover"><i id="close" class="material-icons">close</i></button>
       </div>
 
       <div class="notification checked">
@@ -70,11 +98,11 @@
           <input type="checkbox" checked>
           <span class="checkmark"></span>
         </label>
-        <span class="flag-icon">&#128278;</span>
-        <span class="notification-icon">&#10003;</span>
+        <i id="flag" class="material-icons">bookmark</i>
+        <i id="check" class="material-icons">check</i>
         <span class="notification-text">Uma nova versão está disponível</span>
         <small>5 dias atrás</small>
-        <button class="close-btn" title="Remover">&#10060;</button>
+        <button class="close-btn" title="Remover"><i id="close" class="material-icons">close</i></button>
       </div>
 
       <div class="notification checked">
@@ -82,21 +110,29 @@
           <input type="checkbox" checked>
           <span class="checkmark"></span>
         </label>
-        <span class="flag-icon">&#128278;</span>
-        <span class="notification-icon">&#10003;</span>
+        <i id="flag" class="material-icons">bookmark</i>
+        <i id="check" class="material-icons">check</i>
         <span class="notification-text">Nova senha adicionada com sucesso</span>
         <small>Uma semana atrás</small>
-        <button class="close-btn" title="Remover">&#10060;</button>
+        <button class="close-btn" title="Remover"><i id="close" class="material-icons">close</i></button>
       </div>
     </section>
   </main>
 
-  <footer>
-    <span>Fale conosco: <a href="mailto:ajuda@passync.com">ajuda@passync.com</a></span>
+  <footer class="rodape">
+    <span>Fale conosco: <a href="ajudapassync@gmail.com">ajudapassync@gmail.com</a></span>
     <span class="footer-center">PASSYNC</span>
     <span class="social-icons">
-      &#9993; &nbsp; &#128241; &nbsp; &#128222; &nbsp; &#128247;
+      <a href="#"><img src="../imagens/whatsapp-logo-rodape.png" alt="WhatsApp"></a>
+      <a href="#"><img src="../imagens/instagram-logo-rodape.png" alt="Instagram"></a>
+      <a href="#"><img src="../imagens/email-logo-rodape.png" alt="Email"></a>
+      <a href="#"><img src="../imagens/facebook-logo-rodape.png" alt="Facebook"></a>
     </span>
   </footer>
+
+  <script src="menu.js"></script>
+
+
+
 </body>
 </html>
