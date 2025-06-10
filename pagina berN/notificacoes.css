@@ -332,11 +332,6 @@ footer {
   flex-wrap: wrap;
 }
 
-.footer-center {
-  font-weight: bold;
-  text-align: center;
-}
-
 footer a {
   color: white;
   text-decoration: underline;
