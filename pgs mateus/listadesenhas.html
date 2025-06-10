@@ -5,14 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lista de Senhas - PASSYNC</title>
   <link rel="stylesheet" href="lista.css">
+  <link rel="shortcut icon" href="../imagens/faviconpassync/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-  <header class="top-bar">
-    <div class="menu-icon">&#9776;</div>
-    <span class="logo">PASSYNC</span>
-    <div class="home-icon">
-    <img src="../imagens/icone-de-casa.png" alt="Ícone casa"></div>
+
+  <header class="topo">
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <div class="logo">PASSYNC</div>
+    <a href="../pgs eduardop/logado.html"><i id="home-icon" class="material-icons">home</i></a>
   </header>
+
+  <menu id="itens" style="display: none;">
+    <div class="menu-item">
+      <span class="material-icons">person</span>
+      <a href="../pgs eduardop/perfil.html"><button>Perfil</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">favorite</span>
+      <a href="../pgs mariana/favoritos.html"><button>Favoritos</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">menu</span>
+      <a href="../pgs mateus/listadesenhas.html"><button>Lista</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">mail</span>
+      <a href="../pagina berN/notificacoes.html"><button>Notificações</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">add</span>
+      <a href="../pgs mateus/geradordesenhas.html"><button>Gerar</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">warning</span>
+      <a href="../pagina berN/alertas.html"><button>Alertas</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">settings</span>
+      <a href="../pgs eduardop/config.html"><button>Configurações</button></a>
+    </div>
+  </menu>
 
   <main class="container">
     <h1>Lista de Senhas</h1>
@@ -68,7 +101,7 @@
   </main>
 
   <footer class="footer">
-    <span>Fale Conosco: ajuda@passync.com </span>
+    <span>Fale Conosco: ajudapassync@gmail.com </span>
     <div class="socials">
         <img src="../imagens/whatsapp-logo-rodape.png" alt="WhatsApp">
         <img src="../imagens/instagram-logo-rodape.png" alt="Instagram">
@@ -76,5 +109,8 @@
         <img src="../imagens/facebook-logo-rodape.png" alt="Facebook">
     </div>
   </footer>
+
+  <script src="lista.js"></script>
+
 </body>
 </html>

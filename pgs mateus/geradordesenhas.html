@@ -3,16 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PASSYNC - Gerar Senha</title>
+  <title>Gerar Senha</title>
   <link rel="stylesheet" href="gerador_style.css">
+  <link rel="shortcut icon" href="../imagens/faviconpassync/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-  <header class="top-bar">
-    <div class="menu-icon">&#9776;</div>
-    <span class="logo">PASSYNC</span>
-    <div class="home-icon">
-    <img src="../imagens/icone-de-casa.png" alt="Ícone casa"></div>
+
+  <header class="topo">
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <div class="logo">PASSYNC</div>
+    <a href="../pgs eduardop/logado.html"><i id="home-icon" class="material-icons">home</i></a>
   </header>
+
+  <menu id="itens" style="display: none;">
+    <div class="menu-item">
+      <span class="material-icons">person</span>
+      <a href="../pgs eduardop/perfil.html"><button>Perfil</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">favorite</span>
+      <a href="../pgs mariana/favoritos.html"><button>Favoritos</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">menu</span>
+      <a href="../pgs mateus/listadesenhas.html"><button>Lista</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">mail</span>
+      <a href="../pagina berN/notificacoes.html"><button>Notificações</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">add</span>
+      <a href="../pgs mateus/geradordesenhas.html"><button>Gerar</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">warning</span>
+      <a href="../pagina berN/alertas.html"><button>Alertas</button></a>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons">settings</span>
+      <a href="../pgs eduardop/config.html"><button>Configurações</button></a>
+    </div>
+  </menu>
 
   <main class="container">
     <h1>Gerar Senha</h1>
@@ -20,8 +53,8 @@
     <div class="password-box">
       <input type="text" value="D+yl&6OH*#e6" id="password" readonly>
       <div class="icons">
-        <button onclick="generatePassword()">🔄</button>
-        <button onclick="copyPassword()">📋</button>
+        <button onclick="generatePassword()"><i id="gerar" class="material-icons">refresh</i></button>
+        <button onclick="copyPassword()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/></svg></button>
       </div>
     </div>
 
@@ -39,7 +72,7 @@
   </main>
 
   <footer class="footer">
-    <span>Fale Conosco: ajuda@passync.com </span>
+    <span>Fale Conosco: ajudapassync@gmail.com </span>
     <div class="socials">
         <img src="../imagens/whatsapp-logo-rodape.png" alt="WhatsApp">
         <img src="../imagens/instagram-logo-rodape.png" alt="Instagram">
@@ -48,17 +81,6 @@
     </div>
   </footer>
 
-  <script>
-    function copyPassword() {
-      const password = document.getElementById("password");
-      password.select();
-      document.execCommand("copy");
-      alert("Senha copiada!");
-    }
-
-    function generatePassword() {
-      document.getElementById("password").value = "N3w$P@ss#12";
-    }
-  </script>
+<script src="gerar.js"></script>
 </body>
 </html>
